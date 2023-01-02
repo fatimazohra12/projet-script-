@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>About</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="courses.html">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Start About -->
+  <div class="about">
+    <div class="container">
+      <p>You can learn anything.</p>
+      <div class="about-content">
+        <div class="image">
+          <!--img decoding="async" src="biblio.jpg" alt=""-->
+        </div>
+        <div class="text">
+          <p>
+            A more engaging way to learn
+            Our interactive platform makes learning active and engaging.
+            Your team members don’t just watch or read about someone else coding — they write and edit their own code
+            live,
+            practicing and applying what they learn in real-world situations.
+          </p>
+          <hr />
+          <p>
+            Build the skills you need
+            Created by industry experts,
+            our course catalog covers all of the most sought-after technical skills and languages
+            (like Html, Css, JavaScript, Php).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End About -->
+  <style>
+    .text {
+      background: #f8fafb;
+      z-index: 999;
+      padding-left: 50px;
+    }
+
+    .about {
+      padding-top: var(--section-padding);
+      padding-bottom: calc(var(--section-padding) + 60px);
+    }
+
+    .about .about-content {
+      margin-top: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 991px) {
+      .about .about-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    .about .about-content .image {
+      position: relative;
+      width: 250px;
+      height: 375px;
+    }
+
+    @media (max-width: 991px) {
+      .about .about-content .image {
+        margin: 0 auto 60px;
+      }
+    }
+
+    .about .about-content .image::before {
+      content: "";
+      position: absolute;
+      background-color: #ebeced;
+      width: 100px;
+      height: calc(100% + 80px);
+      top: -40px;
+      left: -20px;
+      z-index: -1;
+    }
+
+    .about .about-content .image::after {
+      top: -40px;
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 300px;
+      border-left: 80px solid var(--main-color);
+      border-bottom: 80px solid var(--main-color);
+      z-index: -1;
+      right: -150px;
+    }
+
+    @media (max-width: 991px) {
+
+      .about .about-content .image::before,
+      .about .about-content .image::after {
+        display: none;
+      }
+    }
+
+    .about .about-content .image img {
+      height: 100%;
+    }
+
+    .about .about-content .text {
+      flex-basis: calc(100% - 500px);
+    }
+
+    .about .about-content .text p:first-of-type {
+      font-weight: bold;
+      line-height: 2;
+      margin-bottom: 50px;
+    }
+
+    .about .about-content .text hr {
+      width: 50%;
+      display: inline-block;
+      border-color: var(--main-color);
+    }
+
+    .about .about-content .text p:last-of-type {
+      line-height: 2;
+      color: #777;
+    }
+
+    /* End About */
+  </style>
+
+</body>
+
+</html>
